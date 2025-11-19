@@ -30,12 +30,12 @@ system('clear');
     sleep(1);
         while (true){
 // $checkKey  = file('https://pastebin.com/raw/NdpZSWzh'); // Link Key (tạo ở pastebin.com nếu muốn chia sẻ)
-$checkKey  = "yanii903"; // Link Key (custom)
+$checkKey  = "792005"; // Link Key (custom)
 // echo "\033[1;96mLưu Ý Khi nào sai key thì vào link lấy lại\n";
 // echo "\033[1;93mLink lấy key:\033[1;91m https://link1s.com/KeyFree\n"; /// Link Key Đã tạo ở link1s.com
 echo "\033[1;92mNhập Key Để Chạy Server: \033[1;33m";
       $makey = trim(fgets(STDIN));
-    if ($makey == $checkKey[0])  {
+    if ($makey == $checkKey)  {
     sleep(1);
         echo "\033[1;35mKey Dúng Đang chạy server\n";
 system('java -Xms2G  -Xmx2G -jar dist/mad.jar');
